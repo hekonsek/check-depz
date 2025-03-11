@@ -1,10 +1,11 @@
 import subprocess
 import sys
-
+import shlex
 
 def main():
     result = subprocess.run(
-        ["poetry", "show", "--outdated", "--top-level"], capture_output=True, text=True
+        shlex.split("poetry show  --outdated --top-level"), 
+        capture_output=True, text=True
     )
     outdated_packages = result.stdout.strip().split("\n")
     outdated_count = len(outdated_packages) - 1
