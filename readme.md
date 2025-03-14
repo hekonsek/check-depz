@@ -7,7 +7,7 @@ Project `check-dependencies` is a simple command line tool to easily check if yo
 Add `check-dependencies` to your project:
 
 ```
-$ poetry add --group=dev git+https://github.com/hekonsek/check-dependencies.git@v0.3.0 
+$ poetry add --group=dev git+https://github.com/hekonsek/check-dependencies.git@v0.4.0 
 ```
 
 Run dependencies check:
