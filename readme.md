@@ -18,9 +18,9 @@ Number of outdated dependencies: 0
 Dependency check passed.
 ```
 
-### Outdated dependencies threashold 
+### Outdated dependencies limit 
 
-By default `check-dependencies` allow up to 10 
+By default `check-dependencies` allow up to 10 outdated dependencies.
 
 ### Exit codes
 
