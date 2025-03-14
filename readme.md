@@ -10,10 +10,34 @@ Add `check-dependencies` to your project:
 $ poetry add --group=dev git+https://github.com/hekonsek/check-dependencies.git@v0.3.0 
 ```
 
-Check dependencies:
+Run dependencies check:
 
 ```
 $ poetry run check-dependencies
 Number of outdated dependencies: 0
 Dependency check passed.
+```
+
+### Outdated dependencies threashold 
+
+By default `check-dependencies` allow up to 10 
+
+### Exit codes
+
+Please note `check-dependencies` returns exit code `0` on succesfull check and code `1` on failure, so you can rely on this behavior:
+
+```
+check-dependencies && echo "Dependencies are up to date!"
+```
+
+...or...
+
+
+```
+#!/bin/bash
+set -e  # Exit on command failure
+
+check-dependencies
+echo "This will NOT run if there are too many out of date dependencies."
+
 ```
