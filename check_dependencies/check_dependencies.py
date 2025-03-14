@@ -14,8 +14,9 @@ def main():
     print()
     print(result.stdout)
 
-    if outdated_count > 10:
-        print("Too many outdated dependencies! Build failed.")
+    limit = 10
+    if outdated_count > limit:
+        print(f"Too many outdated dependencies (limit is {limit}). Check failed.")
         sys.exit(1)
     else:
         print("Dependency check passed.")
