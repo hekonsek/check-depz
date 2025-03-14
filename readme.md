@@ -6,6 +6,14 @@
 
 Add `check-dependencies` to your project:
 
-```bash
-poetry add --group=dev git+https://github.com/hekonsek/check-dependencies.git@v0.3.0 
+```
+$ poetry add --group=dev git+https://github.com/hekonsek/check-dependencies.git@v0.3.0 
+```
+
+Check dependencies:
+
+```
+$ poetry run check-dependencies
+Number of outdated dependencies: 0
+Dependency check passed.
 ```
