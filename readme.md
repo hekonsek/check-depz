@@ -1,4 +1,4 @@
-# check-dependencies - Easy outdated dependencies check for Python projects 
+# check-dependencies: Easy outdated dependencies check for Python projects 
 
 Project `check-dependencies` is a simple command line tool to easily check if your Python project contains too many outdated dependencies. 
 
