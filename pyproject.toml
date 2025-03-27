@@ -1,5 +1,5 @@
 [project]
-name = "check-deps"
+name = "check-depz"
 version = "0.5.0"
 description = ""
 authors = [
@@ -16,4 +16,4 @@ requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-check-deps = "check_deps.check_dependencies:main"
+check-depz = "check_depz.check_dependencies:main"
