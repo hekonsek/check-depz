@@ -14,17 +14,19 @@ Run dependencies check:
 
 ```
 $ poetry run check-depz
-Number of outdated dependencies: 0
-Dependency check passed.
+Outdated top level dependencies: 0/10
+Outdated all dependencies: 1/20
+        typing-extensions 4.12.2 4.13.0 Backported and Experimental Type Hints for P...
+All dependency checks passed.
 ```
 
 ### Outdated dependencies limit 
 
-By default `check-depz` allow up to 10 outdated dependencies.
+By default `check-depz` allows up to 10 outdated dependencies for top level dependencies and 20 outdated dependencies for all dependencies in the project.
 
 ### Exit codes
 
-Please note `check-depz` returns exit code `0` on succesfull check and code `1` on failure, so you can rely on this behavior:
+Please note `check-depz` returns exit code `0` on succesfull checks and code `1` on failure, so you can rely on this behavior:
 
 ```
 check-depz && echo "Dependencies are up to date!"
