@@ -7,7 +7,7 @@ def check_poetry_output(name: str, command: str, limit: int) -> bool:
         shlex.split(command), 
         capture_output=True, text=True
     )
-    outdated_packages = [for package in result.stdout.strip().split("\n") if package != ""] 
+    outdated_packages = [package for package in result.stdout.strip().split("\n") if package != ""] 
     outdated_count = len(outdated_packages)
 
     print(f"Outdated {name} dependencies: {outdated_count}/{limit}")
