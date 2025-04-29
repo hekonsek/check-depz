@@ -26,4 +26,4 @@ jobs:
         git config --global user.name "GitHub Action"
         git config --global user.email "gha@gha.com"
     - name: Release version
-      run: poetry run vrz minor --update-file=readme.md
+      run: poetry run vrz minor
