@@ -22,7 +22,11 @@ All dependency checks passed.
 
 ### Outdated dependencies limit 
 
-By default `check-depz` allows up to 10 outdated dependencies for top level dependencies and 20 outdated dependencies for all dependencies in the project.
+By default `check-depz` allows up to 10 outdated dependencies for top level dependencies and 20 outdated dependencies for all dependencies in the project. You can adjust limits with `--top-level-limit` and `--all-limit` options:
+
+```bash
+check-depz --top-level-limit 15 --all-limit 30
+```
 
 ### Exit codes
 
