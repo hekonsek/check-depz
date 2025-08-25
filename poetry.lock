@@ -311,22 +311,22 @@ zstd = ["zstandard (>=0.18.0)"]
 
 [[package]]
 name = "vrz"
-version = "0.29.0"
+version = "0.30.0"
 description = ""
 optional = false
 python-versions = ">=3.12"
 groups = ["dev"]
 files = [
-    {file = "vrz-0.29.0-py3-none-any.whl", hash = "sha256:db0eb4c522282f03ac596de42ba3adaae1d0cb2cf8d6837dce66088f68bbff06"},
-    {file = "vrz-0.29.0.tar.gz", hash = "sha256:e0ed150b037128e0300e4c5f60b8ae1ef4f1c259382f9f81365cf425cae61c65"},
+    {file = "vrz-0.30.0-py3-none-any.whl", hash = "sha256:26d8cfe13fb24f96b4c2b25644ccbbfbc8e92560acc74cbcd2b03ac62042d7ce"},
+    {file = "vrz-0.30.0.tar.gz", hash = "sha256:9e8176760ca9319b80bdcfd2deaa37698c9026787e65ec166243998b7f605132"},
 ]
 
 [package.dependencies]
 requests = ">=2.32.3,<3.0.0"
 semver = ">=3,<4"
-typer = ">=0.16.1,<0.17.0"
+typer = ">=0.16.1"
 
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "8d4539d599183e2b543ac3f668c8e03d083444f229557616d37629410b4c2cd6"
+content-hash = "8d6aa3c14ff5bbdc265ae21286bbd194b4e265599da919773568b17491ffe4e7"

@@ -8,7 +8,7 @@ authors = [
 readme = "readme.md"
 requires-python = ">=3.12"
 dependencies = [
-    "typer (>=0.16.1,<0.17.0)",
+    "typer >=0.16.1",
 ]
 
 
@@ -20,5 +20,5 @@ build-backend = "poetry.core.masonry.api"
 check-depz = "check_depz.check_dependencies:main"
 
 [tool.poetry.group.dev.dependencies]
-vrz = "^0.29.0"
+vrz = ">=0.29.0"
 
